@@ -1,0 +1,5 @@
+# Temel bağımlılıklar (sadece gerekli paketler)
+streamlit>=1.30.0
+sentence-transformers>=2.6.0
+numpy>=1.24.0
+requests>=2.31.0

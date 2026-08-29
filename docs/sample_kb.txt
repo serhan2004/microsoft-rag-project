@@ -1,0 +1,14 @@
+RAG (Retrieval-Augmented Generation) is an architecture that allows language models to generate answers by retrieving information from the user's own documents instead of relying only on their training data.
+The RAG architecture consists of three main phases: Indexing, Retrieval, and Generation.
+In the indexing phase, documents are split into small chunks and each chunk is converted into numeric vectors using an embedding model.
+Embedding models position sentences that are semantically similar close to each other in the vector space.
+In the retrieval phase, the user's question is also converted into a vector using the same embedding model, and its similarity to the vectors in the database is computed.
+The most common method for measuring vector similarity is Cosine Similarity, which measures the angular distance between two vectors.
+As the Cosine Similarity value approaches +1, the two texts are considered more semantically similar.
+In the generation phase, the most relevant text chunks are added to the language model's prompt as context.
+Thanks to this added context, the language model generates responses grounded only in the provided documents, avoiding hallucination.
+RAG enables question answering over current or private corporate information that is not present in the model's training data.
+SQLite is a suitable vector storage solution for local environments thanks to its serverless and lightweight structure.
+The Sentence-Transformers library provides an offline embedding solution, converting texts into 384-dimensional vectors with the all-MiniLM-L6-v2 model.
+Streamlit is a free and open-source library used to build fast and interactive web interfaces in Python.
+The biggest advantage of local RAG systems is that data never leaves the device and no internet connection is required.

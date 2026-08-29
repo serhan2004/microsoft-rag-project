@@ -1,0 +1,14 @@
+# Python sanal ortamı ve önbellekler
+venv/
+__pycache__/
+*.pyc
+
+# Yerel veritabanı ve loglar
+rag_db.db
+*.log
+
+# VS Code ayarları
+.vscode/
+
+# macOS
+.DS_Store
